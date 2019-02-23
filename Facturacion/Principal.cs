@@ -12,7 +12,10 @@ namespace Facturacion
 {
     public partial class FRM_MDI_PRINCIPAL : Form
     {
-        FRMLOGIN Login;
+        frmClientes Clientes;
+        frmEmpleado Empleado;
+        frmProductos Productos;
+        frmSeguridad Seguridad;
         private int childFormNumber = 0;
 
         public FRM_MDI_PRINCIPAL()
@@ -25,9 +28,26 @@ namespace Facturacion
             this.Close();
         }
 
-        private void adminClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AdminClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (Clientes is null)
+            {
+                Clientes = new frmClientes
+                {
+                    MdiParent = this
+                };
+                Clientes.FormClosed += new FormClosedEventHandler(Clientes_FormClosed);
+                Clientes.Show();
+            }
+            else
+            {
+                Clientes.Activate();
+            }
+        }
 
+        private void Clientes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Clientes = null;
         }
     }
 }
