@@ -83,21 +83,21 @@
             // adminClientesToolStripMenuItem
             // 
             this.adminClientesToolStripMenuItem.Name = "adminClientesToolStripMenuItem";
-            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.adminClientesToolStripMenuItem.Text = "Admin Clientes";
             this.adminClientesToolStripMenuItem.Click += new System.EventHandler(this.AdminClientesToolStripMenuItem_Click);
             // 
             // adminProductosToolStripMenuItem
             // 
             this.adminProductosToolStripMenuItem.Name = "adminProductosToolStripMenuItem";
-            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.adminProductosToolStripMenuItem.Text = "Admin Productos";
             this.adminProductosToolStripMenuItem.Click += new System.EventHandler(this.AdminProductosToolStripMenuItem_Click);
             // 
             // adminEmpleadosToolStripMenuItem
             // 
             this.adminEmpleadosToolStripMenuItem.Name = "adminEmpleadosToolStripMenuItem";
-            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.adminEmpleadosToolStripMenuItem.Text = "Admin Empleados";
             this.adminEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.adminEmpleadosToolStripMenuItem_Click);
             // 
@@ -113,6 +113,7 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
             // 
             // FRM_MDI_PRINCIPAL
             // 

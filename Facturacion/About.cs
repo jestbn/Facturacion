@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Facturacion
 {
-    public partial class About : Form
+    public partial class frmAbout : Form
     {
-        public About()
+        public frmAbout()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Facturacion
         frmEmpleado Empleado;
         frmProductos Productos;
         frmSeguridad Seguridad;
-
+        frmAbout AcercaDe;
         public FRM_MDI_PRINCIPAL()
         {
             InitializeComponent();
@@ -113,6 +113,28 @@ namespace Facturacion
         private void Seguridad_FormClosed(object sender, FormClosedEventArgs e)
         {
             Seguridad = null;
+        }
+
+        private void AcercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (AcercaDe is null)
+            {
+                AcercaDe = new frmAbout
+                {
+                    MdiParent = this
+                };
+                AcercaDe.FormClosed += new FormClosedEventHandler(AcercaDe_FormClosed);
+                AcercaDe.Show();
+            }
+            else
+            {
+                AcercaDe.Activate();
+            }
+        }
+
+        private void AcercaDe_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            AcercaDe = null;
         }
     }
 }
