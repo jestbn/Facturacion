@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MDI_PRINCIPAL));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.adminTablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,6 +103,7 @@
             this.adminClientesToolStripMenuItem.Name = "adminClientesToolStripMenuItem";
             this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminClientesToolStripMenuItem.Text = "Admin Clientes";
+            this.adminClientesToolStripMenuItem.Click += new System.EventHandler(this.adminClientesToolStripMenuItem_Click);
             // 
             // adminProductosToolStripMenuItem
             // 
@@ -157,7 +156,6 @@
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileMenu;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem adminTablasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminProductosToolStripMenuItem;
