@@ -37,9 +37,7 @@
             this.adminProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formSeguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +66,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.exitToolStripMenuItem.Text = "&Salir";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
@@ -80,54 +78,41 @@
             this.adminEmpleadosToolStripMenuItem});
             this.adminTablasToolStripMenuItem.Name = "adminTablasToolStripMenuItem";
             this.adminTablasToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.adminTablasToolStripMenuItem.Text = "Admin Tablas";
+            this.adminTablasToolStripMenuItem.Text = "A&dmin Tablas";
             // 
             // adminClientesToolStripMenuItem
             // 
             this.adminClientesToolStripMenuItem.Name = "adminClientesToolStripMenuItem";
-            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminClientesToolStripMenuItem.Text = "Admin Clientes";
             this.adminClientesToolStripMenuItem.Click += new System.EventHandler(this.AdminClientesToolStripMenuItem_Click);
             // 
             // adminProductosToolStripMenuItem
             // 
             this.adminProductosToolStripMenuItem.Name = "adminProductosToolStripMenuItem";
-            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminProductosToolStripMenuItem.Text = "Admin Productos";
+            this.adminProductosToolStripMenuItem.Click += new System.EventHandler(this.AdminProductosToolStripMenuItem_Click);
             // 
             // adminEmpleadosToolStripMenuItem
             // 
             this.adminEmpleadosToolStripMenuItem.Name = "adminEmpleadosToolStripMenuItem";
-            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminEmpleadosToolStripMenuItem.Text = "Admin Empleados";
+            this.adminEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.adminEmpleadosToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
-            this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formSeguridadToolStripMenuItem});
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
-            // 
-            // formSeguridadToolStripMenuItem
-            // 
-            this.formSeguridadToolStripMenuItem.Name = "formSeguridadToolStripMenuItem";
-            this.formSeguridadToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.formSeguridadToolStripMenuItem.Text = "Form Seguridad";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.SeguridadToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
-            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
             // 
             // FRM_MDI_PRINCIPAL
             // 
@@ -159,9 +144,7 @@
         private System.Windows.Forms.ToolStripMenuItem adminProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem formSeguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

@@ -16,7 +16,6 @@ namespace Facturacion
         frmEmpleado Empleado;
         frmProductos Productos;
         frmSeguridad Seguridad;
-        private int childFormNumber = 0;
 
         public FRM_MDI_PRINCIPAL()
         {
@@ -48,6 +47,72 @@ namespace Facturacion
         private void Clientes_FormClosed(object sender, FormClosedEventArgs e)
         {
             Clientes = null;
+        }
+
+        private void AdminProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Productos is null)
+            {
+                Productos = new frmProductos
+                {
+                    MdiParent = this
+                };
+                Productos.FormClosed += new FormClosedEventHandler(Productos_FormClosed);
+                Productos.Show();
+            }
+            else
+            {
+                Productos.Activate();
+            }
+        }
+
+        private void Productos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Productos = null;
+        }
+
+        private void adminEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Empleado is null)
+            {
+                Empleado = new frmEmpleado
+                {
+                    MdiParent = this
+                };
+                Empleado.FormClosed += new FormClosedEventHandler(Empleado_FormClosed);
+                Empleado.Show();
+            }
+            else
+            {
+                Empleado.Activate();
+            }
+        }
+
+        private void Empleado_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Empleado = null;
+        }
+
+        private void SeguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Seguridad is null)
+            {
+                Seguridad = new frmSeguridad
+                {
+                    MdiParent = this
+                };
+                Seguridad.FormClosed += new FormClosedEventHandler(Seguridad_FormClosed);
+                Seguridad.Show();
+            }
+            else
+            {
+                Seguridad.Activate();
+            }
+        }
+
+        private void Seguridad_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Seguridad = null;
         }
     }
 }
