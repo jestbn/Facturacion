@@ -38,6 +38,10 @@
             this.adminEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,9 +49,11 @@
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
-            this.adminTablasToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
+            this.adminTablasToolStripMenuItem,
+            this.facturaciónToolStripMenuItem,
+            this.acercaDeToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -83,21 +89,21 @@
             // adminClientesToolStripMenuItem
             // 
             this.adminClientesToolStripMenuItem.Name = "adminClientesToolStripMenuItem";
-            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminClientesToolStripMenuItem.Text = "Admin Clientes";
             this.adminClientesToolStripMenuItem.Click += new System.EventHandler(this.AdminClientesToolStripMenuItem_Click);
             // 
             // adminProductosToolStripMenuItem
             // 
             this.adminProductosToolStripMenuItem.Name = "adminProductosToolStripMenuItem";
-            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminProductosToolStripMenuItem.Text = "Admin Productos";
             this.adminProductosToolStripMenuItem.Click += new System.EventHandler(this.AdminProductosToolStripMenuItem_Click);
             // 
             // adminEmpleadosToolStripMenuItem
             // 
             this.adminEmpleadosToolStripMenuItem.Name = "adminEmpleadosToolStripMenuItem";
-            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.adminEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adminEmpleadosToolStripMenuItem.Text = "Admin Empleados";
             this.adminEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.adminEmpleadosToolStripMenuItem_Click);
             // 
@@ -114,6 +120,33 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
+            // 
+            // facturaciónToolStripMenuItem
+            // 
+            this.facturaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroFacturasToolStripMenuItem,
+            this.informesToolStripMenuItem});
+            this.facturaciónToolStripMenuItem.Name = "facturaciónToolStripMenuItem";
+            this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.facturaciónToolStripMenuItem.Text = "Facturación";
+            // 
+            // registroFacturasToolStripMenuItem
+            // 
+            this.registroFacturasToolStripMenuItem.Name = "registroFacturasToolStripMenuItem";
+            this.registroFacturasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroFacturasToolStripMenuItem.Text = "Registro Facturas";
+            // 
+            // informesToolStripMenuItem
+            // 
+            this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
+            this.informesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informesToolStripMenuItem.Text = "Informes";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // FRM_MDI_PRINCIPAL
             // 
@@ -145,6 +178,10 @@
         private System.Windows.Forms.ToolStripMenuItem adminEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturaciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroFacturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }
 
