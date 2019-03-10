@@ -97,7 +97,7 @@ namespace Facturacion
 
         internal string EjecutarComando(string sentencia)
         {
-            string salida = "los datos se ejecutaron exitosamente";
+            string salida ;
             try
             {
                 int retornado;
@@ -120,6 +120,25 @@ namespace Facturacion
                 salida = $"Falló la inserción '{e}'";
             }
             return salida;
+        }
+
+        internal DataTable EjecutarComandoDatos(string cmd)
+        {
+            try
+            {
+                AbrirBd();
+                da = new SqlDataAdapter(cmd, conexion);
+                dt = new DataTable();
+                da.Fill(dt);
+                CerrarBd();
+                return dt;
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("Falló la operación "+ e);
+                return null;
+            }
         }
     }
 }

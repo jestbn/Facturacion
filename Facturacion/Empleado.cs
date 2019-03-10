@@ -72,7 +72,7 @@ namespace Facturacion
 						$"'{txtDireccion.Text}'," +
 						$"'{txtTelefono.Text}'," +
 						$"'{txtEmail.Text}'," +
-						$"'{cbRol.Text}'," +
+						$"'{Convert.ToInt32(cbRol.SelectedValue)}'," +
 						$"'{dtmIngreso.Text}'," +
 						$"'{dtmRetiro.Text}'," +
 						$"'{txtDatosAdicionales.Text}'," +
@@ -107,7 +107,7 @@ namespace Facturacion
 			}
 			if (txtDocumento.Text == string.Empty)
 			{
-				MensajeError.SetError(txtNombre, "debe documento el nombre del empleado");
+				MensajeError.SetError(txtNombre, "debe ingresar el documento del empleado");
 				txtDocumento.Focus();
 				errorCampos = false;
 			}
