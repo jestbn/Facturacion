@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Facturacion
@@ -19,19 +12,25 @@ namespace Facturacion
 
         private void BtnValidar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "javier" && txtContraseña.Text=="1234")
+            string Respuesta = ""; //Variable para controlar si el ususario se encontro en la base de datos
+            if (txtUsuario.Text != "" && txtContraseña.Text != string.Empty) //verificacion del usuario y la contraseña no esten null
             {
-                //MessageBox.Show("Test");
-                FRM_MDI_PRINCIPAL abrir = new FRM_MDI_PRINCIPAL();
-                abrir.Show();
-                this.Hide();
-            }
-            else
-            {
-                txtUsuario.Clear();
-                txtContraseña.Clear();
-                MessageBox.Show("Error, contraseña o usuario incorrecto.");
-                txtUsuario.Focus();
+                Acceso_datos Acceso = new Acceso_datos(); //objeto de la clase Acceso_datos
+                Respuesta = Acceso.ValidarUsuario(txtUsuario.Text, txtContraseña.Text);
+                if (Respuesta != "")
+                {
+                    MessageBox.Show($"Bienvenido :{Respuesta}");
+                    FRM_MDI_PRINCIPAL abrir = new FRM_MDI_PRINCIPAL();
+                    abrir.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    txtUsuario.Clear();
+                    txtContraseña.Clear();
+                    MessageBox.Show("Error, contraseña o usuario incorrecto.");
+                    txtUsuario.Focus();
+                }
             }
         }
 
