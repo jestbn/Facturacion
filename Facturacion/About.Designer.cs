@@ -39,10 +39,10 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 180);
+            this.label1.Size = new System.Drawing.Size(315, 200);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Facturación 1.0\r\n\r\nPor Juan Esteban Gil López 1039474716\r\n\r\nHerramientas de progr" +
-    "amación 3 (1-2019)\r\n\r\nFebrero 2019\r\n\r\nInstitución Universitaria Pascual Bravo.\r\n" +
+            this.label1.Text = "Facturación 1.2\r\n\r\nPor Juan Esteban Gil López 1039474716\r\n\r\nHerramientas de progr" +
+    "amación 3 (1-2019)\r\n\r\nMarzo 2019\r\n\r\nInstitución Universitaria Pascual Bravo.\r\n\r\n" +
     "";
             // 
             // button1

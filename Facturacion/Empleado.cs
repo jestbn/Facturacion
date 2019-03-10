@@ -72,13 +72,26 @@ namespace Facturacion
 						$"'{txtDireccion.Text}'," +
 						$"'{txtTelefono.Text}'," +
 						$"'{txtEmail.Text}'," +
-						$"'{Convert.ToInt32(cbRol.SelectedValue)}'," +
-						$"'{dtmIngreso.Text}'," +
-						$"'{dtmRetiro.Text}'," +
+						$"{Convert.ToInt32(cbRol.SelectedValue)}," +
+						$" '{dtmIngreso.Value.Date.ToString("dd/MM/yy")}', " +
+                        $" '{dtmRetiro.Value.Date.ToString("dd/MM/yy")}'," +
 						$"'{txtDatosAdicionales.Text}'," +
-						$"'{DateTime.Now}'," +
-						$"'ADMIN' ";
-					MessageBox.Show(acceso.EjecutarComando(sentencia));
+                        $" '{DateTime.Now.Date.ToString("dd/MM/yy")}', " +
+						$"'ADMIN' ";/*
+                         @strNombre varchar(50), 
+			             @NumDocumento  bigint,
+			             @StrDireccion varchar(50)   
+			            ,@StrTelefono  varchar(20)   
+			            ,@StrEmail  varchar(50)   
+			            ,@IdRolEmpleado int  
+			            ,@DtmIngreso  datetime  
+			            ,@DtmRetiro  datetime  
+			            ,@strDatosAdicionales  nvarchar(250)  
+			            ,@DtmFechaModifica  datetime  
+			            ,@StrUsuarioModifico  varchar(20)  
+
+                     */
+                    MessageBox.Show(acceso.EjecutarComando(sentencia));
 					Llenar_Grid();
 					actualizado = true;
 				}

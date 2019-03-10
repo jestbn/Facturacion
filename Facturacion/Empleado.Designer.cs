@@ -66,7 +66,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(234, 207);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 41);
-            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Borrar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -76,7 +76,7 @@
             this.btnReEstablecer.Location = new System.Drawing.Point(343, 207);
             this.btnReEstablecer.Name = "btnReEstablecer";
             this.btnReEstablecer.Size = new System.Drawing.Size(103, 41);
-            this.btnReEstablecer.TabIndex = 14;
+            this.btnReEstablecer.TabIndex = 13;
             this.btnReEstablecer.Text = "Nuevo";
             this.btnReEstablecer.UseVisualStyleBackColor = true;
             this.btnReEstablecer.Click += new System.EventHandler(this.btnReEstablecer_Click);
@@ -86,15 +86,14 @@
             this.txtDocumento.Location = new System.Drawing.Point(164, 62);
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(132, 20);
-            this.txtDocumento.TabIndex = 13;
-            this.txtDocumento.UseSystemPasswordChar = true;
+            this.txtDocumento.TabIndex = 2;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(164, 36);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 20);
-            this.txtNombre.TabIndex = 12;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtCodigoEmpleado
             // 
@@ -199,22 +198,21 @@
             this.txtEmail.Location = new System.Drawing.Point(164, 147);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(132, 20);
-            this.txtEmail.TabIndex = 31;
-            this.txtEmail.UseSystemPasswordChar = true;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(163, 118);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(132, 20);
-            this.txtTelefono.TabIndex = 30;
+            this.txtTelefono.TabIndex = 4;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(164, 89);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(132, 20);
-            this.txtDireccion.TabIndex = 29;
+            this.txtDireccion.TabIndex = 3;
             // 
             // txtDatosAdicionales
             // 
@@ -222,14 +220,14 @@
             this.txtDatosAdicionales.Multiline = true;
             this.txtDatosAdicionales.Name = "txtDatosAdicionales";
             this.txtDatosAdicionales.Size = new System.Drawing.Size(132, 47);
-            this.txtDatosAdicionales.TabIndex = 33;
+            this.txtDatosAdicionales.TabIndex = 9;
             // 
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(125, 207);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(103, 41);
-            this.btnModificar.TabIndex = 37;
+            this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
@@ -238,7 +236,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(16, 207);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(103, 41);
-            this.btnGuardar.TabIndex = 36;
+            this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -248,7 +246,7 @@
             this.btnSalir.Location = new System.Drawing.Point(549, 224);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(74, 24);
-            this.btnSalir.TabIndex = 38;
+            this.btnSalir.TabIndex = 14;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -259,21 +257,23 @@
             this.cbRol.Location = new System.Drawing.Point(491, 37);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(132, 21);
-            this.cbRol.TabIndex = 39;
+            this.cbRol.TabIndex = 6;
             // 
             // dtmIngreso
             // 
+            this.dtmIngreso.CustomFormat = "dd/mm/yy";
             this.dtmIngreso.Location = new System.Drawing.Point(491, 64);
             this.dtmIngreso.Name = "dtmIngreso";
             this.dtmIngreso.Size = new System.Drawing.Size(132, 20);
-            this.dtmIngreso.TabIndex = 40;
+            this.dtmIngreso.TabIndex = 7;
             // 
             // dtmRetiro
             // 
+            this.dtmRetiro.CustomFormat = "dd/mm/yy";
             this.dtmRetiro.Location = new System.Drawing.Point(491, 94);
             this.dtmRetiro.Name = "dtmRetiro";
             this.dtmRetiro.Size = new System.Drawing.Size(132, 20);
-            this.dtmRetiro.TabIndex = 41;
+            this.dtmRetiro.TabIndex = 8;
             // 
             // label1
             // 

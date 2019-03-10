@@ -51,7 +51,7 @@ namespace Facturacion
                     string sentencia = $"Exec actualizar_Seguridad '{Convert.ToInt32(cbCodigoEmpleado.SelectedValue)}'," +
                         $"'{txtUsuario.Text}'," +
                         $"'{txtClave.Text}'," +
-                        $"{DateTime.Now}," +
+                        $"{DateTime.Now.Date.ToString("dd/MM/yy")}," +
                         $"'ADMIN',";
                     MessageBox.Show(acceso.EjecutarComando(sentencia));
                     actualizado = true;
