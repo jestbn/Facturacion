@@ -48,7 +48,6 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtDatosAdicionales = new System.Windows.Forms.TextBox();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.cbRol = new System.Windows.Forms.ComboBox();
@@ -63,7 +62,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(234, 207);
+            this.btnEliminar.Location = new System.Drawing.Point(125, 207);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 41);
             this.btnEliminar.TabIndex = 12;
@@ -73,7 +72,7 @@
             // 
             // btnReEstablecer
             // 
-            this.btnReEstablecer.Location = new System.Drawing.Point(343, 207);
+            this.btnReEstablecer.Location = new System.Drawing.Point(234, 207);
             this.btnReEstablecer.Name = "btnReEstablecer";
             this.btnReEstablecer.Size = new System.Drawing.Size(103, 41);
             this.btnReEstablecer.TabIndex = 13;
@@ -222,15 +221,6 @@
             this.txtDatosAdicionales.Size = new System.Drawing.Size(132, 47);
             this.txtDatosAdicionales.TabIndex = 9;
             // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(125, 207);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(103, 41);
-            this.btnModificar.TabIndex = 11;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(16, 207);
@@ -308,7 +298,6 @@
             this.Controls.Add(this.dtmIngreso);
             this.Controls.Add(this.cbRol);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtDatosAdicionales);
             this.Controls.Add(this.txtEmail);
@@ -363,7 +352,6 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtDatosAdicionales;
-        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cbRol;

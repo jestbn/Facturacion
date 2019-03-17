@@ -28,92 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtCantStock = new System.Windows.Forms.TextBox();
+            this.txtFotoProd = new System.Windows.Forms.TextBox();
+            this.txtDetalle = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEstablecer = new System.Windows.Forms.Button();
-            this.txtClave = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtCodigoEmpleado = new System.Windows.Forms.TextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodProd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgProductos = new System.Windows.Forms.DataGridView();
+            this.MensajeError = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
+            // btnSalir
             // 
-            this.button3.Location = new System.Drawing.Point(333, 289);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 24);
-            this.button3.TabIndex = 69;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(333, 289);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(74, 24);
+            this.btnSalir.TabIndex = 69;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.Location = new System.Drawing.Point(111, 238);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 41);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardar.Location = new System.Drawing.Point(16, 238);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(89, 41);
+            this.btnGuardar.TabIndex = 67;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button2
+            // txtCantStock
             // 
-            this.button2.Location = new System.Drawing.Point(16, 238);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 41);
-            this.button2.TabIndex = 67;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtCantStock.Location = new System.Drawing.Point(164, 192);
+            this.txtCantStock.Name = "txtCantStock";
+            this.txtCantStock.Size = new System.Drawing.Size(242, 20);
+            this.txtCantStock.TabIndex = 61;
             // 
-            // textBox5
+            // txtFotoProd
             // 
-            this.textBox5.Location = new System.Drawing.Point(164, 192);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(242, 20);
-            this.textBox5.TabIndex = 61;
+            this.txtFotoProd.Location = new System.Drawing.Point(164, 166);
+            this.txtFotoProd.Name = "txtFotoProd";
+            this.txtFotoProd.Size = new System.Drawing.Size(242, 20);
+            this.txtFotoProd.TabIndex = 60;
             // 
-            // textBox6
+            // txtDetalle
             // 
-            this.textBox6.Location = new System.Drawing.Point(164, 166);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(242, 20);
-            this.textBox6.TabIndex = 60;
+            this.txtDetalle.Location = new System.Drawing.Point(164, 140);
+            this.txtDetalle.Name = "txtDetalle";
+            this.txtDetalle.Size = new System.Drawing.Size(242, 20);
+            this.txtDetalle.TabIndex = 59;
             // 
-            // textBox1
+            // txtCategoria
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 20);
-            this.textBox1.TabIndex = 59;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txtCategoria.Location = new System.Drawing.Point(164, 114);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(242, 20);
+            this.txtCategoria.TabIndex = 58;
             // 
-            // textBox2
+            // txtPrecioVenta
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 20);
-            this.textBox2.TabIndex = 58;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(164, 88);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(242, 20);
-            this.textBox3.TabIndex = 57;
+            this.txtPrecioVenta.Location = new System.Drawing.Point(164, 88);
+            this.txtPrecioVenta.Name = "txtPrecioVenta";
+            this.txtPrecioVenta.Size = new System.Drawing.Size(242, 20);
+            this.txtPrecioVenta.TabIndex = 57;
             // 
             // label8
             // 
@@ -165,45 +161,46 @@
             this.label6.TabIndex = 47;
             this.label6.Text = "Precio Venta";
             // 
-            // btnModificar
+            // btnEliminar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(211, 238);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 41);
-            this.btnModificar.TabIndex = 46;
-            this.btnModificar.Text = "Borrar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(111, 238);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(100, 41);
+            this.btnEliminar.TabIndex = 46;
+            this.btnEliminar.Text = "Borrar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // btnEstablecer
+            // btnLimpiar
             // 
-            this.btnEstablecer.Location = new System.Drawing.Point(317, 238);
-            this.btnEstablecer.Name = "btnEstablecer";
-            this.btnEstablecer.Size = new System.Drawing.Size(89, 41);
-            this.btnEstablecer.TabIndex = 45;
-            this.btnEstablecer.Text = "Nuevo";
-            this.btnEstablecer.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(217, 238);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(89, 41);
+            this.btnLimpiar.TabIndex = 45;
+            this.btnLimpiar.Text = "Nuevo";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // txtClave
+            // txtPrecioCompra
             // 
-            this.txtClave.Location = new System.Drawing.Point(164, 62);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(242, 20);
-            this.txtClave.TabIndex = 44;
-            this.txtClave.UseSystemPasswordChar = true;
+            this.txtPrecioCompra.Location = new System.Drawing.Point(164, 62);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(242, 20);
+            this.txtPrecioCompra.TabIndex = 44;
             // 
-            // txtUsuario
+            // txtNombre
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(164, 36);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(242, 20);
-            this.txtUsuario.TabIndex = 43;
+            this.txtNombre.Location = new System.Drawing.Point(164, 36);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(242, 20);
+            this.txtNombre.TabIndex = 43;
             // 
-            // txtCodigoEmpleado
+            // txtCodProd
             // 
-            this.txtCodigoEmpleado.Location = new System.Drawing.Point(164, 10);
-            this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
-            this.txtCodigoEmpleado.Size = new System.Drawing.Size(242, 20);
-            this.txtCodigoEmpleado.TabIndex = 42;
+            this.txtCodProd.Location = new System.Drawing.Point(164, 10);
+            this.txtCodProd.Name = "txtCodProd";
+            this.txtCodProd.Size = new System.Drawing.Size(242, 20);
+            this.txtCodProd.TabIndex = 42;
             // 
             // label3
             // 
@@ -235,29 +232,42 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Código Producto";
             // 
+            // dgProductos
+            // 
+            this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgProductos.Location = new System.Drawing.Point(8, 319);
+            this.dgProductos.Name = "dgProductos";
+            this.dgProductos.Size = new System.Drawing.Size(414, 229);
+            this.dgProductos.TabIndex = 76;
+            this.dgProductos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgProductos_CellMouseClick);
+            // 
+            // MensajeError
+            // 
+            this.MensajeError.ContainerControl = this;
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 325);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(434, 558);
+            this.Controls.Add(this.dgProductos);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.txtCantStock);
+            this.Controls.Add(this.txtFotoProd);
+            this.Controls.Add(this.txtDetalle);
+            this.Controls.Add(this.txtCategoria);
+            this.Controls.Add(this.txtPrecioVenta);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnEstablecer);
-            this.Controls.Add(this.txtClave);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.txtCodigoEmpleado);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.txtPrecioCompra);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -268,6 +278,9 @@
             this.Name = "frmProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.frmProductos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,26 +288,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox txtCantStock;
+        private System.Windows.Forms.TextBox txtFotoProd;
+        private System.Windows.Forms.TextBox txtDetalle;
+        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtPrecioVenta;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnEstablecer;
-        private System.Windows.Forms.TextBox txtClave;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtCodigoEmpleado;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.TextBox txtPrecioCompra;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodProd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgProductos;
+        private System.Windows.Forms.ErrorProvider MensajeError;
     }
 }

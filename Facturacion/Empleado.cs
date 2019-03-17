@@ -73,10 +73,10 @@ namespace Facturacion
 						$"'{txtTelefono.Text}'," +
 						$"'{txtEmail.Text}'," +
 						$"{Convert.ToInt32(cbRol.SelectedValue)}," +
-						$" '{dtmIngreso.Value.Date.ToString("dd/MM/yy")}', " +
-                        $" '{dtmRetiro.Value.Date.ToString("dd/MM/yy")}'," +
+						$" '{dtmIngreso.Value.Date.ToString("yyyy-MM-dd")}', " +
+                        $" '{dtmRetiro.Value.Date.ToString("yyyy-MM-dd")}'," +
 						$"'{txtDatosAdicionales.Text}'," +
-                        $" '{DateTime.Now.Date.ToString("dd/MM/yy")}', " +
+                        $" '{DateTime.Now.Date.ToString("yyyy-MM-dd")}', " +
 						$"'ADMIN' ";/*
                          @strNombre varchar(50), 
 			             @NumDocumento  bigint,
@@ -120,7 +120,7 @@ namespace Facturacion
 			}
 			if (txtDocumento.Text == string.Empty)
 			{
-				MensajeError.SetError(txtNombre, "debe ingresar el documento del empleado");
+				MensajeError.SetError(txtDocumento, "debe ingresar el documento del empleado");
 				txtDocumento.Focus();
 				errorCampos = false;
 			}
@@ -130,7 +130,7 @@ namespace Facturacion
 			}
 			if (!esNumerico(txtDocumento.Text))
 			{
-				MensajeError.SetError(txtNombre, "debe documento debe ser numerico");
+				MensajeError.SetError(txtDocumento, "debe documento debe ser numerico");
 				txtDocumento.Focus();
 				errorCampos = false;
 			}
@@ -141,7 +141,7 @@ namespace Facturacion
 			return errorCampos;
 		}
 
-		private bool esNumerico(string num)
+		public bool esNumerico(string num)
 		{
 			try
 			{
