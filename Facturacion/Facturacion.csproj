@@ -168,5 +168,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaLogicaDeNegocios\CapaLogicaDeNegocios.csproj">
+      <Project>{b157ab6c-211c-4096-b1a3-4b6a80c77529}</Project>
+      <Name>CapaLogicaDeNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
