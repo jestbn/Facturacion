@@ -83,7 +83,7 @@ namespace Facturacion
                         $"'{dtmIngreso.Value.Date.ToString("yyyy-MM-dd")}', " +
                         $"'ADMIN' ";
                     MessageBox.Show(acceso.EjecutarComando(sentencia));
-                    Llenar_Grid();
+                    //Llenar_Grid();
                     actualizado = true;
                 }
                 catch (Exception e)
@@ -95,7 +95,7 @@ namespace Facturacion
             }
             return actualizado;
         }
-        /*
+        
         private Boolean Validar()
         {
             Boolean errorCampos = true;
@@ -131,7 +131,7 @@ namespace Facturacion
                 MensajeError.SetError(txtDocumento, "");
             }
             return errorCampos;
-        } */
+        } 
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
