@@ -1,0 +1,31 @@
+
+/* 
+EJEMPLO DE MANEJO DE HOJAS DE ESTILO
+Javier Saldarriaga Cano
+Octubre de 2018
+
+*/
+
+html,body{margin:0;padding:0}
+
+body{font: 76% arial,sans-serif;text-align:center}
+
+p{margin:0 10px 10px}
+a{display:block;color: #981793;padding:10px}
+
+div#encabezado h1{height:50px;line-height:50px;margin:0;  padding-left:5px;background: #EEE;color: #000000}
+div#encabezado{background:#B9CAFF;margin-bottom:10px;margin-top:10px}  
+
+div#contenedor{text-align:left}
+div#contenido p{line-height:1.4}
+
+div#derecha{background:#79B30B}
+div#piepagina{background: #000000;color: #FFF}
+div#piepagina p{margin:0;padding:15px 10px}
+
+div#contenedor{width:100%;margin:0 auto}
+div#centro{float:left;width:100%}
+div#contenido{margin: 0 300px}
+div#derecha{float:left;width:250px;margin-top:10px;margin-left:-250px}
+div#navegacion{float:left;width:250px;margin-left:-1350px;;margin-bottom:10px;height:510px;}
+div#piepagina{clear:left;width:100%;margin-bottom:0px;margin-top:10px}

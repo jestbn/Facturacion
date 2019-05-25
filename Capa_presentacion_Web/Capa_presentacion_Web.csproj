@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\estilo.css" />
     <Content Include="css\estilobase.css" />
     <Content Include="css\estilos.css" />
     <Content Include="FrmAdminClientes.aspx" />
