@@ -45,7 +45,7 @@ namespace CapaAccesoDatos
             try
             {
                 conexion = new SqlConnection(
-                    "Data Source=DESKTOP-FDMNVGI\\SQLEXPRESS;" +
+                    "Data Source=PCMR\\SQLEXPRESS;" +
                     "Initial Catalog =DbFactura;" +
                     "Integrated Security = True"
                     );

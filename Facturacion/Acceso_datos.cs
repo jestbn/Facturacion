@@ -20,7 +20,7 @@ namespace Facturacion
             {
                 // creamos un objeto de tipo conexión a la base de datos y se pasa como parámetro la cadena de conexión
                 conexion = new SqlConnection(
-                    "Data Source=DESKTOP-FDMNVGI\\SQLEXPRESS;" +
+                    "Data Source=PCMR\\SQLEXPRESS;" +
                     "Initial Catalog =DbFactura;" +
                     "Integrated Security = True"
                     );

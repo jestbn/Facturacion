@@ -126,8 +126,7 @@ namespace CapaLogicaDeNegocios
             }
             catch (Exception ex)
             {
-
-                throw (ex);
+                Console.WriteLine(ex.ToString());
             }
         }
     }

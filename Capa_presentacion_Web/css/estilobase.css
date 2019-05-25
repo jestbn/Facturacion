@@ -1,0 +1,26 @@
+    /* estilo de página base funcionalidad responsive*/
+	/* por: javier saldarriaga Cano*/
+    .row.content {height: 530px}
+    
+    /* color barra lateral*/
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* color de barra e pie pagina*/
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 8px;
+	  text-align:center;
+    }
+    
+    /* ajuste cuando se minimiza el explorador */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
