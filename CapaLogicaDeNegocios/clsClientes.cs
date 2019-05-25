@@ -37,8 +37,8 @@ namespace CapaLogicaDeNegocios
                 lst.Add(new Cls_parametros("@StrDireccion", C_Direccion));
                 lst.Add(new Cls_parametros("@StrTelefono", C_Telefono));
                 lst.Add(new Cls_parametros("@StrEmail", C_email));
-                lst.Add(new Cls_parametros("@StrUsuarioModifica", C_UsuarioModifica));
                 lst.Add(new Cls_parametros("@DtmFechaModifica", DateTime.Now));
+                lst.Add(new Cls_parametros("@StrUsuarioModifico", C_UsuarioModifica));
                 mensaje = Acceso.Ejecutar_procedimiento("actualizar_Cliente", lst);
             }
             catch (Exception ex)

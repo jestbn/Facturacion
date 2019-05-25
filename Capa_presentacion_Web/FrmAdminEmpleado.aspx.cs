@@ -27,7 +27,7 @@ namespace Capa_presentacion_Web
                     capa_empleado.C_IdEmpleado = 0;
                     capa_empleado.C_Nombre = txtNombre.Text;
                     capa_empleado.C_Documento = double.Parse(TxtDocumento.Text);
-                    //capa_empleado.C_Direccion = ;
+                    capa_empleado.C_Direccion = txtDireccion.Text;
                     capa_empleado.C_Telefono = txtTelefono.Text;
                     capa_empleado.C_email = txtEmail.Text;
                     capa_empleado.C_UsuarioModifica = "Admin(Esteban)";
